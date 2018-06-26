@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link id="favIcon" rel="icon" href="images/toastIcon.png">
+  <title>Chinese Chess | 中国象棋</title>
+  <meta name="author" content="cc">
+  <meta name="description" content="a little tutorial">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Chinese Chess | 中国象棋</h1>
+    <h2>A Little Tutorial</h2>
+    <ul>
+      <li>rule 1</li>
+      <li>rule 2</li>
+      <li>rule 3</li>
+    </ul>
+    <img src="images/toastIcon.png" alt="le picture">
+  </header>
+  <main>
+    <table>
+      <tr><!-- 1-->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="diagonalL"></td>
+        <td class="diagonalR"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr><!-- 2-->
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+        <td></td>
+        <td class="diagonalR"></td>
+        <td class="diagonalL"></td>
+        <td></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+      </tr>
+      <tr><!-- 3 -->
+        <td class="marker bottomLeft topRight"></td>
+        <td class="marker bottomRight topLeft"></td>
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft topRight"></td>
+        <td class="marker bottomRight topLeft"></td>
+      </tr>
+      <tr><!-- 4 -->
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+      </tr>
+      <tr class="river"> <!-- 5-->
+        <td></td>
+        <td class="riverName" colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td class="riverName flipped" colspan="2"></td>
+        <td></td>
+      </tr>
+      <tr><!-- 4 -->
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+        <td class="marker bottomLeft"></td>
+        <td class="marker bottomRight"></td>
+      </tr>
+      <tr><!-- 3 -->
+        <td class="marker topLeft bottomRight"></td>
+        <td class="marker topRight bottomLeft"></td>
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft bottomRight"></td>
+        <td class="marker topRight bottomLeft"></td>
+      </tr>
+      <tr> <!-- 8-->
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+        <td></td>
+        <td class="diagonalL"></td>
+        <td class="diagonalR"></td>
+        <td></td>
+        <td class="marker topRight"></td>
+        <td class="marker topLeft"></td>
+      </tr>
+      <tr> <!-- 9 -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="diagonalR"></td>
+        <td class="diagonalL"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </table>
+  </main>
+  <footer>Controls</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

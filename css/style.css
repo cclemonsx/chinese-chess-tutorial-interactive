@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-family: monospace;
+}
+
+header {
+  margin-top: 1em;
+  padding-top: 2em;
+
+}
+
+table {
+  margin: 0 auto;
+  height: 900px;
+  width: 800px;
+  padding: 5px;
+  border: 1px solid #222;
+}
+
+footer {
+
+}
+
+td {
+  position: relative;
+  border: 1px solid #222;
+  width: 10%;
+  height: 10%;
+}
+
+/*stupid Xs*/
+td.diagonalR:after, td.diagonalL:after {
+    width: 140px;
+    content: " ";
+    position: absolute;
+    border-radius: 1px;
+    border-top: 0.5px solid #222;
+    transform-origin: 0.5px 50%; /*comes from corner*/
+    left: 0;
+}
+
+/* space = child element; sibling element = no space */
+
+td.diagonalR:after {
+  transform: rotate(-45deg); /* when using transform, look up x-browser shtuf */
+  bottom: 0;
+
+}
+td.diagonalL:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+td.marker:before, td.marker:after {
+  content: " ";
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  border-radius: 1px;
+}
+
+td.bottomRight:before {
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  right: 2px;
+  bottom: 2px;
+}
+
+td.bottomLeft:before {
+  border-bottom: 1px solid #222;
+  border-left: 1px solid #222;
+  left: 2px;
+  bottom: 2px;
+}
+
+td.topLeft:after {
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  left: 2px;
+  top: 2px;
+}
+td.topRight:after {
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+  right: 2px;
+  top: 2px;
+}
+
+
+.river td {
+  border: none;
+  margin: 0 auto;
+}
+
+.riverName {
+  background-image: url("../images/river.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flipped {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+   transform: scaleY(-1);
+   filter: FlipV;
+   -ms-filter: "FlipV";
+}
+
+/*media queries*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  table {
+    height: 360px;
+    width: 320px;
+  }
+
+  td.diagonalR:after, td.diagonalL:after {
+      width: 54px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    height: 720px;
+    width: 640px;
+  }
+  td.diagonalR:after, td.diagonalL:after {
+    width: 100px;
+}
