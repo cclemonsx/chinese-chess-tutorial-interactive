@@ -28,39 +28,40 @@
       <li>rule 2</li>
       <li>rule 3</li>
     </ul>
-    <img src="images/toastIcon.png" alt="le picture">
+    <img id="headerImg" src="images/chessChibi.png" alt="le picture">
   </header>
   <main>
     <table>
       <tr><!-- 1-->
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="diagonalL"></td>
-        <td class="diagonalR"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><img class="redTop redTopLeft"  src="images/charRed.png" alt="red chariot piece"></td>
+        <td>  <img class="redTop redTopLeft"  src="images/kniRed.png" alt="red knight piece"></td>
+        <td>  <img class="redTop redTopRight"  src="images/advRed.png" alt="red advisor piece">
+          <img class="redTop redTopLeft" src="images/bishRed.png" alt="red bishop piece"></td>
+        <td class="diagonalL highlight highlightLT"><img onclick="moveSelection()" id="genRed" class="redTop redTopRight" src="images/genRed.png" alt="red general piece"></td>
+        <td class="diagonalR highlight highlightRT"> <img class="redTop redTopRight"  src="images/advRed.png" alt="red advisor piece"></td>
+        <td> <img class="redTop redTopRight" src="images/bishRed.png" alt="red bishop piece"></td>
+        <td> <img class="redTop redTopRight" src="images/kniRed.png" alt="red knight piece"></td>
+        <td> <img class="redTop redTopRight"  src="images/charRed.png" alt="red chariot piece"></td>
       </tr>
       <tr><!-- 2-->
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"> <img class="redMid redMidRight" src="images/cannRed.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
         <td></td>
-        <td class="diagonalR"></td>
-        <td class="diagonalL"></td>
+        <td class="diagonalR highlightLB"></td>
+        <td class="diagonalL highlightRB"></td>
         <td></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"> <img class="redMid redMidLeft" src="images/cannRed.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
       </tr>
       <tr><!-- 3 -->
-        <td class="marker bottomLeft topRight"></td>
-        <td class="marker bottomRight topLeft"></td>
+        <td class="marker bottomLeft topRight"> <img class="redBottom redBottomLeft" src="images/soldRed.png" alt="red cannon piece"></td>
+        <td class="marker bottomRight topLeft"> <img class="redBottom redBottomRight" src="images/soldRed.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"><img class="redBottom redBottomRight" src="images/soldRed.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"><img class="redBottom redBottomRight" src="images/soldRed.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft topRight"></td>
-        <td class="marker bottomRight topLeft"></td>
+        <td class="marker bottomRight topLeft"><img class="redBottom redBottomRight" src="images/soldRed.png" alt="red cannon piece"></td>
       </tr>
       <tr><!-- 4 -->
         <td class="marker topLeft"></td>
@@ -81,23 +82,23 @@
         <td></td>
       </tr>
       <tr><!-- 4 -->
+        <td class="marker bottomLeft"> <img class="blkBottom blkBottomLeft" src="images/soldBlk.png" alt="red cannon piece"></td>
+        <td class="marker bottomRight"> <img class="blkBottom blkBottomRight"  src="images/soldBlk.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"> <img class="blkBottom blkBottomRight"  src="images/soldBlk.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"> <img class="blkBottom blkBottomRight" src="images/soldBlk.png" alt="red cannon piece"></td>
         <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
-        <td class="marker bottomLeft"></td>
-        <td class="marker bottomRight"></td>
+        <td class="marker bottomRight"> <img class="blkBottom blkBottomRight" src="images/soldBlk.png" alt="red cannon piece"></td>
       </tr>
       <tr><!-- 3 -->
-        <td class="marker topLeft bottomRight"></td>
+        <td class="marker topLeft bottomRight"> <img class="blkMid blkMidLeft" src="images/cannBlk.png" alt="red cannon piece"></td>
         <td class="marker topRight bottomLeft"></td>
         <td class="marker topLeft"></td>
         <td class="marker topRight"></td>
         <td class="marker topLeft"></td>
         <td class="marker topRight"></td>
-        <td class="marker topLeft bottomRight"></td>
+        <td class="marker topLeft bottomRight"> <img class="blkMid blkMidRight" src="images/cannBlk.png" alt="red cannon piece"></td>
         <td class="marker topRight bottomLeft"></td>
       </tr>
       <tr> <!-- 8-->
@@ -111,14 +112,15 @@
         <td class="marker topLeft"></td>
       </tr>
       <tr> <!-- 9 -->
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="diagonalR"></td>
-        <td class="diagonalL"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>  <img class="blkBottomLeft"  src="images/charBlk.png" alt="black advisor piece"></td>
+        <td>  <img class="blkBottomLeft"  src="images/kniBlk.png" alt="black advisor piece"></td>
+        <td>  <img class="blkBottomRight"  src="images/advBlk.png" alt="black advisor piece"><img class="blkBottomLeft"
+            src="images/bishBlk.png" alt="blk bishop piece"></td>
+        <td class="diagonalR">  <img class="blkBottomRight"  src="images/genBlk.png" alt="black advisor piece"></td>
+        <td class="diagonalL"> <img class="blkBottomRight"  src="images/advBlk.png" alt="black advisor piece"></td>
+        <td> <img class="blkBottomRight"  src="images/bishBlk.png" alt="black advisor piece"></td>
+        <td> <img class="blkBottomRight"  src="images/kniBlk.png" alt="black advisor piece"></td>
+        <td> <img class="blkBottomRight" src="images/charBlk.png" alt="black advisor piece"></td>
       </tr>
 
     </table>
